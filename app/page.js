@@ -11,7 +11,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-gray-700/10 to-gray-600/10"></div>
         <div className="relative px-6 py-16 sm:py-24 text-center">
           <div className="mb-8 flex justify-center">
-            <Image src={logo} alt='logo ocio' width={220} height={220} className="rounded-3"></Image>
+            <Image src={logo} alt='logo ocio' width={220} height={220} className="rounded-full"></Image>
           </div>
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-4 animate-fade-in">
             <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Ocio Bar</span>
@@ -54,6 +54,9 @@ export default function Home() {
                   {trago.titulo}
                 </h3>
                 <p className="text-gray-400 leading-relaxed line-clamp-3">{trago.descripcion}</p>
+                 <p className="text-gray-400 leading-relaxed line-clamp-3">{trago.precio}</p>
+                <p className="text-gray-400 leading-relaxed line-clamp-3">{trago.promo}</p>
+
 
                 {/* Button */}
                 <div className="pt-4">

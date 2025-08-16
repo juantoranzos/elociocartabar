@@ -54,6 +54,8 @@ export default function TragoDetail() {
               {trago.titulo}
             </h1>
             <p className="text-gray-400 text-lg">{trago.fecha}</p>
+            <p className="text-gray-400 text-lg">{trago.precio}</p>
+            <p className="text-gray-400 text-lg">{trago.promo}</p>
           </div>
 
           {/* Image */}
