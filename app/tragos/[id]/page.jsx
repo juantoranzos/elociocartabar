@@ -76,11 +76,7 @@ export default function TragoDetail() {
             </div>
 
             {/* Action Button */}
-            <div className="mt-8 pt-6 border-t border-gray-800/50">
-              <button className="w-full sm:w-auto bg-gradient-to-r from-gray-800 to-black hover:from-white hover:to-gray-200 text-white hover:text-black font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-white/25">
-                Ordenar este trago
-              </button>
-            </div>
+          
           </div>
         </article>
       </main>
