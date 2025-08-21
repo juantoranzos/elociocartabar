@@ -1,7 +1,7 @@
-import Image from "next/image"
-import Link from "next/link"
-import tragos from "@/db/db"
-import logo from "@/public/elociologo.jpeg"
+import Image from "next/image";
+import Link from "next/link";
+import tragos from "@/db/db";
+import logo from "@/public/elociologo.jpeg";
 
 export default function Home() {
   return (
@@ -11,10 +11,20 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-gray-700/10 to-gray-600/10"></div>
         <div className="relative px-6 py-16 sm:py-24 text-center">
           <div className="mb-8 flex justify-center">
-            <Image src={logo} alt='logo ocio' width={220} height={220} className="rounded-full"></Image>
+            <div className="relative rounded-full before:content-[''] before:absolute before:inset-0 before:rounded-full before:bg-amber-500/40 before:blur-xl before:animate-pulse">
+              <Image
+                src={logo}
+                alt="logo ocio"
+                width={220}
+                height={220}
+                className="relative rounded-full"
+              />
+            </div>
           </div>
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-4 animate-fade-in">
-            <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Ocio Bar</span>
+            <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+              Ocio Bar
+            </span>
           </h1>
           <p className="text-xl sm:text-2xl text-gray-400 max-w-2xl mx-auto animate-fade-in-delay">
             Tu lugar para compartir momentos únicos
@@ -24,7 +34,9 @@ export default function Home() {
 
       {/* Menu Section */}
       <div className="px-6 py-16 max-w-7xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center text-white mb-12">Nuestra Carta de Tragos</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold text-center text-white mb-12">
+          Nuestra Carta de Tragos
+        </h2>
 
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {tragos.map((trago, index) => (
@@ -53,10 +65,15 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-white group-hover:text-gray-200 transition-colors duration-300">
                   {trago.titulo}
                 </h3>
-                <p className="text-gray-400 leading-relaxed line-clamp-3">{trago.descripcion}</p>
-                 <p className="text-gray-400 leading-relaxed line-clamp-3">{trago.precio}</p>
-                <p className="text-gray-400 leading-relaxed line-clamp-3">{trago.promo}</p>
-
+                <p className="text-gray-400 leading-relaxed line-clamp-3">
+                  {trago.descripcion}
+                </p>
+                <p className="text-gray-400 leading-relaxed line-clamp-3">
+                  {trago.precio}
+                </p>
+                <p className="text-gray-400 leading-relaxed line-clamp-3">
+                  {trago.promo}
+                </p>
 
                 {/* Button */}
                 <div className="pt-4">
@@ -71,7 +88,12 @@ export default function Home() {
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
                     </svg>
                   </Link>
                 </div>
@@ -85,5 +107,5 @@ export default function Home() {
         </section>
       </div>
     </div>
-  )
+  );
 }
