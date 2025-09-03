@@ -5,6 +5,9 @@
  import kaipiroshka from "@/public/kaipiroshka.jpeg";
  import ginpicodulce from "@/public/ginpicodulce.jpeg";
  import malibu from "@/public/malibu.jpeg";
+ import patalager from "@/public/amberlager.webp";
+ import corona from "@/public/corona.jpg";
+ import ipa from "@/public/ipa.jpg";
 const tragos = [
   {
     id: 1,
@@ -179,7 +182,7 @@ const tragos = [
     titulo: "Patagonia IPA 710 ml",
     descripcion: "Cerveza",
     precio: "$6000",
-    imagen: "https://menorcoste.com.ar/media/catalog/product/cache/733e84b26907731b1236b698d5769bc3/0/0/0000000019076_19076_0_2024-07-27_11_35_18.jpg",
+    imagen: ipa,
     descripcionLarga: "Patagonia IPA es una cerveza artesanal argentina de estilo India Pale Ale, conocida por su sabor intenso y lupulado. Esta cerveza ofrece un perfil de sabor complejo con notas cítricas y florales, equilibradas por un amargor característico del estilo IPA. Patagonia IPA es una opción popular entre los amantes de las cervezas artesanales que buscan una experiencia de sabor audaz y distintiva."
   },
    {
@@ -187,7 +190,7 @@ const tragos = [
     titulo: "Patagonia Amber Lager 710 ml",
     descripcion: "Cerveza",
     precio: "$6000",
-    imagen: "https://menorcoste.com.ar/media/catalog/product/cache/733e84b26907731b1236b698d5769bc3/0/0/0000000019075_19075_0_2024-04-10_17_35_05.jpg",
+    imagen: patalager,
     descripcionLarga: "Patagonia Amber Lager es una cerveza artesanal argentina de estilo Amber Lager, conocida por su sabor equilibrado y maltoso. Esta cerveza ofrece un perfil de sabor rico con notas de caramelo y toffee, complementadas por un amargor suave que la hace fácil de beber. Patagonia Amber Lager es una opción popular entre los amantes de las cervezas artesanales que buscan una experiencia de sabor completa y satisfactoria."
   },
      {
@@ -195,7 +198,7 @@ const tragos = [
     titulo: "Corona 710 ml",
     descripcion: "Cerveza",
     precio: "$6000",
-    imagen: "https://menorcoste.com.ar/media/catalog/product/cache/733e84b26907731b1236b698d5769bc3/0/0/0050000000211_50000000211_0_2022-01-31_14_25_05.jpg",
+    imagen: corona,
     descripcionLarga: "Corona es una cerveza lager mexicana conocida por su sabor ligero y refrescante. Elaborada con ingredientes de alta calidad, Corona ofrece un perfil de sabor suave con un toque cítrico, lo que la convierte en una opción popular para disfrutar en climas cálidos y en eventos sociales. Su color dorado y su textura ligera la hacen ideal para acompañar una variedad de comidas, especialmente mariscos y platos frescos."
   },
        {
