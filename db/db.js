@@ -8,6 +8,7 @@
  import patalager from "@/public/amberlager.webp";
  import corona from "@/public/corona.jpg";
  import ipa from "@/public/ipa.jpg";
+ import green from "@/public/green.jpeg";
 const tragos = [
   {
     id: 1,
@@ -94,7 +95,7 @@ const tragos = [
     titulo: "Green Space",
     descripcion: "Cóctel Verde",
     precio: "$5000",
-    imagen: "https://previews.123rf.com/images/baibaz/baibaz1702/baibaz170200024/71185042-glass-of-green-cocktail-isolated-on-white-background-from-top-view.jpg",
+    imagen: green,
     descripcionLarga: "El cóctel Green Space es una bebida vibrante y refrescante que combina ingredientes verdes como menta, pepino y jugo de lima, creando un sabor fresco y revitalizante. Es ideal para climas cálidos y se presenta a menudo con hielo y una rodaja de pepino o una ramita de menta como decoración."
   },
   {

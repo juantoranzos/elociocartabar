@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import tragos from "@/db/db";
 import logo from "@/public/elociologo.jpeg";
+import PromoComponent from "@/components/promo";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
             Tu lugar para compartir momentos únicos
           </p>
         </div>
+        <PromoComponent />
       </div>
 
       {/* Menu Section */}
